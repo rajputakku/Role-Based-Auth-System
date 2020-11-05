@@ -1,0 +1,30 @@
+
+<h1>Resources</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Body</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resources.each do |resource| %>
+      <tr>
+        <td><%= resource.id %></td>
+        <td><%= resource.title %></td>
+        <td><%= resource.body %></td>
+        <td><%= link_to 'Show', resource %>
+        <%= link_to 'Edit', edit_resource_path(resource) %>
+        <%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Resource', new_resource_path %>
