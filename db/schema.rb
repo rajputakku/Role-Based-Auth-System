@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 2020_11_04_043956) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "resources", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_resources_on_user_id"
   end
 
@@ -28,8 +31,8 @@ ActiveRecord::Schema.define(version: 2020_11_04_043956) do
   end
 
   create_table "user_roles", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "role_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "role_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["role_id"], name: "index_user_roles_on_role_id"

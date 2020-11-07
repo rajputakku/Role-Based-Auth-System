@@ -15,7 +15,8 @@ RailsAdmin.config do |config|
   config.authorize_with do |controller|
     if current_user.nil?
       redirect_to main_app.root_path, flash: {error: 'Please Login to Continue..'}
-    elsif !current_user.is_super_admin? || !current_user.is_admin?
+    elsif current_user.is_super_admin? || current_user.is_admin?
+    else
       redirect_to main_app.root_path, flash: {error: 'You are not Admin bro!'}
     end
   end
