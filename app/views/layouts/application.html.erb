@@ -13,10 +13,10 @@
   <%= render "layouts/navigation" %>
   <div id="flash">
       <% flash.each do |key, value| %>
-        <div class="flash <%= key %>"><%= value %></div>
+        <div class="flash alert alert-info <%= key %>" style="text-align: center"><%= value %></div>
       <% end %>
     </div>
-    <div class="container-fluid">
+    <div class="container">
     <%= yield %>
     </div>
   </body>

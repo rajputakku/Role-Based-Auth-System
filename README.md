@@ -1,24 +1,32 @@
-# README
+Prerequisites
+The setups steps expect following tools installed on the system.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Github
+Ruby [6.0.3]
+Rails [2.5.3]
 
-Things you may want to cover:
+1. Check out the repository
+   git clone https://github.com/rajputakku/Role-Based-Auth-System.git cd cd Role-Based-Auth-System
 
-* Ruby version
+2. Install dependencies
+   bundle install
 
-* System dependencies
+3. Create and setup the database
+   Run the following commands to create and setup the database.
 
-* Configuration
+rails db:create db:migrate db:seed
 
-* Database creation
+4. Start the Rails server
+   You can start the rails server using the command given below.
 
-* Database initialization
+rails s
 
-* How to run the test suite
+5. Super Admin Credential
+   email: super_admin@gmail.com
+   password: 123456
 
-* Services (job queues, cache servers, search engines, etc.)
+6. Admin Credential
+   email: admin@gmail.com
+   password: 123456
 
-* Deployment instructions
-
-* ...
+And now you can visit the site with the URL http://localhost:3000
