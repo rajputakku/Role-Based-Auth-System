@@ -7,10 +7,12 @@ Rails [2.5.3]
 
 1. Check out the repository
    git clone https://github.com/rajputakku/Role-Based-Auth-System.git
-   cd Role-Based-Auth-System
+
+cd Role-Based-Auth-System
 
 2. Install dependencies
-   bundle install
+
+bundle install
 
 3. Create and setup the database
    Run the following commands to create and setup the database.
