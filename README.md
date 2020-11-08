@@ -6,7 +6,8 @@ Ruby [6.0.3]
 Rails [2.5.3]
 
 1. Check out the repository
-   git clone https://github.com/rajputakku/Role-Based-Auth-System.git cd cd Role-Based-Auth-System
+   git clone https://github.com/rajputakku/Role-Based-Auth-System.git
+   cd Role-Based-Auth-System
 
 2. Install dependencies
    bundle install
