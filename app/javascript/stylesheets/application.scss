@@ -1,2 +1,44 @@
 // app/javascript/stylesheets/application.scss
 @import "toastr";
+@import "~bootstrap/scss/bootstrap"; // never forget the semicolon at the end
+@import "./_custom";
+
+// app/javascript/stylesheets/_custom.scss
+h1 {
+  color: #007bff;
+}
+.navbar-nav {
+  display: inline !important;
+}
+.font_wt {
+  font-size: 18px;
+  text-decoration: none !important;
+}
+#user_email {
+  width: 50%;
+  display: block;
+  padding: 10px;
+}
+#user_password {
+  width: 50%;
+  display: block;
+  padding: 10px;
+}
+#user_password_confirmation {
+  width: 50%;
+  display: block;
+  padding: 10px;
+}
+#resource_title {
+  width: 50%;
+  display: block;
+  padding: 10px;
+}
+#resource_body {
+  width: 50%;
+  display: block;
+  padding: 10px;
+}
+.a:visited {
+  color: white;
+}

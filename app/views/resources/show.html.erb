@@ -1,12 +1,19 @@
-<p>
-  <strong>Title:</strong>
-  <%= @resource.title %>
-</p>
+<div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+  <p>
+    <strong>Title:</strong>
+    <%= @resource.title %>
+  </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @resource.body %>
-</p>
-
-<%= link_to 'Edit', edit_resource_path(@resource) %> |
-<%= link_to 'Back', resources_path %>
+  <p>
+    <strong>Description:</strong>
+    <%= @resource.body %>
+  </p>
+  <%= link_to 'Edit', edit_resource_path(@resource) %> |
+  <%= link_to 'Back', resources_path %>
+  </div>
+  <div class="col-md-3">
+  </div>
+</div>
